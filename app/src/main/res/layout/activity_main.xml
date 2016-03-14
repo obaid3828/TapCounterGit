@@ -12,5 +12,30 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="You Clicked 0 Times"
+        android:id="@+id/txtClicks"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/btnAdd"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/txtClicks"
+        android:layout_alignLeft="@+id/txtClicks"
+        android:layout_alignStart="@+id/txtClicks" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sub"
+        android:id="@+id/btnSub"
+        android:layout_alignTop="@+id/btnAdd"
+        android:layout_toRightOf="@+id/btnAdd"
+        android:layout_toEndOf="@+id/btnAdd"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp" />
 </RelativeLayout>
